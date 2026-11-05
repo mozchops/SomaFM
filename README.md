@@ -113,6 +113,17 @@ The widget integration check uses the installed Omarchy shell in a Wayland
 session, with hidden windows, isolated configuration and D-Bus, and simulated
 audio and clipboard helpers. It is skipped when that runtime is unavailable.
 
+## macOS port
+
+A menu bar port styled after this widget lives in `macOS/` (macOS 14+, Xcode command line tools):
+
+```bash
+sh macOS/build-app.sh
+open macOS/build/SomaFMMinimal.app
+```
+
+It shows the same outlined bar item (level meter and station name) and the same popup layout, always in dark colours. Hover the bar item for the track, bitrate and codec. It is ad-hoc signed for local use. See [docs/SPEC.md](docs/SPEC.md) for what each platform supports, including macOS gaps such as stream reconnect retries, and [AGENTS.md](AGENTS.md) for how the two are kept in sync.
+
 ## License
 
 This plugin is distributed under the [MIT License](LICENSE).
