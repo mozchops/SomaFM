@@ -2,7 +2,7 @@
 
 SomaFM ships as two native hosts that share no executable code:
 
-- **Omarchy** (repository root: `BarWidget.qml` + Python helpers `somafm.py`, `mpris.py`): the **reference design and behaviour**.
+- **Omarchy** (`omarchy/`: `BarWidget.qml` + Python helpers `somafm.py`, `mpris.py`): the **reference design and behaviour**.
 - **macOS** (`macOS/`, Swift, AppKit + SwiftUI, macOS 14+): a menu bar port styled after the Omarchy widget.
 
 ## Keep platforms in sync
@@ -16,9 +16,9 @@ SomaFM ships as two native hosts that share no executable code:
 
 | Host | Command | Runs on |
 |---|---|---|
-| Omarchy | `dbus-run-session -- python -m unittest discover -s tests -v` | Linux with the Omarchy runtime (the widget check is skipped without it) |
+| Omarchy | `cd omarchy && dbus-run-session -- python -m unittest discover -s tests -v` | Linux with the Omarchy runtime (the widget check is skipped without it) |
 | macOS | `sh macOS/build-app.sh` (output `macOS/build/SomaFMMinimal.app`) | macOS with Xcode command line tools, Swift 5 language mode |
 
 The macOS port has no automated tests.
 
-Do not bump `manifest.json`'s version or publish a release unless explicitly asked.
+Do not bump `omarchy/manifest.json`'s version or publish a release unless explicitly asked.

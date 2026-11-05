@@ -1,7 +1,7 @@
 # SomaFM cross-platform spec
 
 Omarchy is the reference. "Not built" means the macOS app does not do it yet, not that it is out of scope.
-The Omarchy colours below come from `preview.png` (theme-driven there); the macOS colours were sampled from it.
+The Omarchy colours below come from `omarchy/preview.png` (theme-driven there); the macOS colours were sampled from it.
 
 ## Shared behaviour
 
@@ -16,7 +16,7 @@ The Omarchy colours below come from `preview.png` (theme-driven there); the macO
 - History: last 30 observed songs, newest first, no consecutive duplicates; click to copy.
 - Persisted: station cache, favourites, sort, listening totals, volume, last station, startup playback, show track, history. The sleep timer is session-only.
 
-## Colours (macOS, sampled from `preview.png`)
+## Colours (macOS, sampled from `omarchy/preview.png`)
 
 Background `#14241F`, text `#CCCDA7`, secondary `#989C80`, accent `#60A387`, card `#24322A`, row `#1D2C25`, current row `#223C33`, button border `#69715C`.
 
