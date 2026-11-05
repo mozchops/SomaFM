@@ -6,7 +6,7 @@ Requires macOS 14+ and the Xcode command line tools.
 
 ```bash
 sh build-app.sh
-open build/SomaFMMinimal.app
+open /Applications/SomaFMMinimal.app
 ```
 
 The app is ad-hoc signed for local use. The bar item shows an outlined box with a level meter and the station name; hover it for the track, bitrate and codec. The popup is always dark. Settings and the station cache are stored in `~/Library/Application Support/SomaFMMinimal/`.

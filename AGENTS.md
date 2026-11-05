@@ -21,7 +21,7 @@ SomaFM ships as four native hosts that share no executable code:
 | Omarchy | `cd omarchy && dbus-run-session -- python -m unittest discover -s tests -v` | Linux with the Omarchy runtime (the widget check is skipped without it) |
 | Windows | `dotnet build windows/SomaFM.Windows/SomaFM.Windows.csproj` | Windows only; not built or tested since the move |
 | iOS | `cd ios && xcodebuild -project SomaFMiOS.xcodeproj -scheme SomaFMiOS -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build` | macOS with Xcode |
-| macOS | `sh macOS/build-app.sh` (output `macOS/build/SomaFMMinimal.app`) | macOS with Xcode command line tools, Swift 5 language mode |
+| macOS | `sh macOS/build-app.sh` (installs to `/Applications/SomaFMMinimal.app`) | macOS with Xcode command line tools, Swift 5 language mode |
 
 The macOS port has no automated tests. Windows and iOS were imported as they were and have no tests here.
 

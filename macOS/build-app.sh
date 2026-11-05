@@ -2,7 +2,8 @@
 set -eu
 
 SCRIPT_DIR=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
-APP_DIR="$SCRIPT_DIR/build/SomaFMMinimal.app"
+APP_DIR="/Applications/SomaFMMinimal.app"
+rm -rf "$APP_DIR"
 CONTENTS_DIR="$APP_DIR/Contents"
 if SDK_PATH=$(xcrun --sdk macosx26.5 --show-sdk-path 2>/dev/null); then
     :
