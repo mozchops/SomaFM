@@ -7,7 +7,7 @@
     <key>CFBundleIdentifier</key>
     <string>com.nick.somafm.minimal</string>
     <key>CFBundleName</key>
-    <string>SomaFM Minimal</string>
+    <string>SomaFM</string>
     <key>CFBundlePackageType</key>
     <string>APPL</string>
     <key>CFBundleShortVersionString</key>
