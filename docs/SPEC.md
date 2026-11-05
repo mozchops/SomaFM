@@ -43,3 +43,15 @@ Background `#14241F`, text `#CCCDA7`, secondary `#989C80`, accent `#60A387`, car
 | Dark / light | follows Omarchy theme | always dark |
 
 The macOS app was last run and checked by hand for the bar item and popup layout. The sleep timer, startup playback, history, Escape-to-close and the media keys have not been verified on macOS.
+
+## Windows and iOS (imported, not yet aligned)
+
+`windows/` and `ios/` were folded in from the separate `SomaFM-Windows` and `somafm-ios` projects. They were not designed against this spec, so they do **not** currently match the Omarchy/macOS bar item, popup layout, colours or settings above. Treat every row of the status table above as **not built** for them until someone aligns them and records the result here.
+
+| Aspect | Windows | iOS |
+|---|---|---|
+| Host | WPF tray client | SwiftUI iPhone/iPad app |
+| Matches the Omarchy design | no | no |
+| Visualizer | not checked | spectrum or waveform, shown in Now Playing |
+| History, notifications, listening time | not checked | yes |
+| Built and run from this repo | no, not built on Windows | iOS Simulator build succeeded; app not run |
